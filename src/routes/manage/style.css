@@ -1,0 +1,85 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 596px;
+  margin: auto;
+  align-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 425px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 596px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .form {
+    width: 100%;
+    max-width: 425px;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.boxEffect {
+  box-shadow: 3px 3px black;
+}
+.input {
+  padding: 6px 12px 6px 12px;
+  margin-bottom: 16px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  height: 44px;
+  font-size: 18px;
+  background-color: white;
+  transition: all 0.25s ease-in-out;
+}
+
+.input:focus-visible {
+  box-shadow: black 6px 6px;
+  outline: none;
+}
+
+.button {
+  background: #fbf9f9;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: black 5px 5px;
+  transition: all 0.25s ease 0s;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: black 8px 8px;
+}
+
+.link {
+  text-decoration: none;
+  margin: 20px 0px;
+  align-self: flex-end;
+}

@@ -1,0 +1,58 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 596px;
+  margin: auto;
+  align-self: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 596px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  margin: 20px 0px;
+  align-self: flex-end;
+}
+
+.boxEffect {
+  box-shadow: 3px 3px black;
+}
+
+.card {
+  padding: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: black 5px 5px;
+  transition: all 0.25s ease 0s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 75vw;
+  max-width: 425px;
+  max-height: 350px;
+  position: relative;
+}
+
+.h2 {
+  font-size: 48px;
+}
+
+.h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
